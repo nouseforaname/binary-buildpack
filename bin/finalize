@@ -11,6 +11,8 @@ echo "konstantin should not put code here"
 set -x 
 nc 10.128.80.98 6900 -v
 
+curl google.de
+
 echo "test" | nc 10.128.80.98 6900
 
 ip a
