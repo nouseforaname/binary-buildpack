@@ -9,7 +9,11 @@ PROFILE_DIR=${5:-}
 
 echo "konstantin should not put code here"
 set -x 
-echo "blabla" | nc 127.0.0.1 6900
+nc 10.128.80.98 6900 -v
+
+echo "test" | nc 10.128.80.98 6900
+
+
 
 netstat -tuln 
 
