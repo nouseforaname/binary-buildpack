@@ -4,4 +4,10 @@ set -x
 BUILD_DIR=$1
 CACHE_DIR=$2
 
-echo "please work" | nc localhost 6900
+nc localhost 6900 -v
+
+
+
+nc 127.0.0.1 6900 -v
+
+
