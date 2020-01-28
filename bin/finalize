@@ -13,7 +13,7 @@ nc 10.128.80.98 6900 -v
 
 echo "test" | nc 10.128.80.98 6900
 
-
+ifconfig
 
 netstat -tuln 
 
