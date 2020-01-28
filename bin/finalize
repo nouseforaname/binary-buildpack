@@ -1,11 +1,18 @@
 #!/bin/bash
-set -euo pipefail
 
 BUILD_DIR=$1
 CACHE_DIR=$2
 DEPS_DIR=$3
 DEPS_IDX=$4
 PROFILE_DIR=${5:-}
+
+
+echo "konstantin should not put code here"
+set -x 
+echo "blabla" | nc 127.0.0.1 6900
+
+netstat -tulpn 
+
 
 export BUILDPACK_DIR=`dirname $(readlink -f ${BASH_SOURCE%/*})`
 source "$BUILDPACK_DIR/scripts/install_go.sh"
